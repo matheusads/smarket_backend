@@ -10,10 +10,10 @@ class TestSmartketApi(TestCase):
         self.client = APIClient()
 
     def test_create_task_model(self):
-        TaskModel.objects.create(description='Test', status='C', user_id=self.user.id)
+        TaskModel.objects.create(description='Test', status='C', user_id=self.user)
         task = TaskModel.objects.all()[0]
         self.assertEqual(len(TaskModel.objects.all()), 1)
-        self.assertEqual(task.user_id, self.user.id)
+        self.assertEqual(task.user_id.id, self.user.id)
         self.assertEqual(task.description, 'Test')
         self.assertEqual(task.status, 'C')
 
