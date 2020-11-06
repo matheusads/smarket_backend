@@ -88,7 +88,7 @@ Task_id is a UUID field auto-generated.
 
 To delete some task send DELETE request to ``/tasks/task_id/``.
  
-After run this project clone (frontend)[https://github.com/matheusads/smartket_frontend] part and use.
+After run this project clone [frontend](https://github.com/matheusads/smartket_frontend) part and use.
 
 **_PS:_**  
 My known errors.  
