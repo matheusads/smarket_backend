@@ -64,3 +64,8 @@ class TestSmartketApi(TestCase):
         r = self.client.delete(f'/tasks/{task.id}/')
         self.assertEqual(r.status_code, 204)
         self.assertEqual(len(TaskModel.objects.all()), 1)
+
+    def test_create_user(self):
+        r = self.client.post('/users/', data={'username': 'Usertest'})
+        self.assertEqual(r.status_code, 201)
+        self.assertEqual(len(User.objects.all()), 3)
