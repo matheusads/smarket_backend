@@ -26,7 +26,7 @@ git clone git@github.com:matheusads/smarket_backend.git
 
 Make a virtualenv with at least Python 3.6
 ```
-python3 -m venv
+python3 -m venv venv
 ```
 
 Activate virtualenv
