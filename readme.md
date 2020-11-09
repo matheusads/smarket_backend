@@ -26,7 +26,7 @@ git clone git@github.com:matheusads/smarket_backend.git
 
 Make a virtualenv with at least Python 3.6
 ```
-python3 -m venv
+python3 -m venv venv
 ```
 
 Activate virtualenv
@@ -88,7 +88,7 @@ Task_id is a UUID field auto-generated.
 
 To delete some task send DELETE request to ``/tasks/task_id/``.
  
-After run this project clone (frontend)[https://github.com/matheusads/smartket_frontend] part and use.
+After run this project clone [frontend](https://github.com/matheusads/smartket_frontend) part and use.
 
 **_PS:_**  
 My known errors.  
